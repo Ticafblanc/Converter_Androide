@@ -26,11 +26,11 @@ public class MainActivity extends AppCompatActivity {
         double result_calcul;
         if (str.isEmpty()){
             result_calcul = 0.0;
-            result.setTextColor(Color.RED);
+            result.setTextColor(getResources().getColor(R.color.Red));
         }
         else{
             result_calcul = Double.parseDouble(str) / taux;
-            result.setTextColor(Color.GREEN);
+            result.setTextColor(getResources().getColor(R.color.Green));
         }
         result.setText(String.format("%.2f", result_calcul) + "dollars");
     }
